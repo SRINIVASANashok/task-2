@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f5f0;
+  color: #2d2926;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+.header {
+  background: #3b2520;
+  color: white;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header nav {
+  display: flex;
+  gap: 25px;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  min-height: 430px;
+  padding: 70px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  background: #ead9c8;
+}
+
+.hero > div:first-child {
+  max-width: 600px;
+}
+
+.welcome {
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+  color: #3b2520;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: #3b2520;
+  color: white;
+  padding: 13px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.hero-image {
+  font-size: 130px;
+}
+
+.tables-section {
+  padding: 60px 8%;
+}
+
+.tables-section h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.table-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.table-card {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 2px solid transparent;
+}
+
+.table-card.available {
+  border-color: #9bbf9b;
+}
+
+.table-card.booked {
+  border-color: #d3a3a3;
+  opacity: 0.65;
+}
+
+.table-icon {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.table-card h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.table-card p {
+  margin-bottom: 12px;
+}
+
+.table-card span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.table-card button,
+.confirmation button {
+  border: none;
+  background: #3b2520;
+  color: white;
+  padding: 11px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.table-card button:hover,
+.confirmation button:hover,
+.confirm-btn:hover {
+  opacity: 0.85;
+}
+
+.booking-form-container {
+  max-width: 750px;
+  margin: 60px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.booking-form-container h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.selected-info {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-group small {
+  display: block;
+  color: #c0392b;
+  margin-top: 5px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.confirm-btn {
+  width: 100%;
+  border: none;
+  background: #3b2520;
+  color: white;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.confirmation {
+  max-width: 650px;
+  margin: 70px auto;
+  background: white;
+  padding: 45px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.success-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #4d8c4d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.confirmation h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.success-message {
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.booking-details {
+  text-align: left;
+  background: #f8f5f0;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.booking-details p {
+  margin-bottom: 12px;
+}
+
+footer {
+  background: #3b2520;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 5%;
+  }
+
+  .header nav {
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 50px 5%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero-image {
+    font-size: 80px;
+  }
+
+  .table-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tables-section {
+    padding: 40px 5%;
+  }
+
+  .booking-form-container,
+  .confirmation {
+    margin: 40px 5%;
+    padding: 25px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+ 
